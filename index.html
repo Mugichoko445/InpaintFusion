@@ -25,7 +25,7 @@
 		Wolfgang Broll, <span class="text-muted">Ilmenau University of Technology</span><br>
 		Hideo Saito, <span class="text-muted">Keio University</span><br>
 		Dieter Schmalstieg, <span class="text-muted">Graz University of Technology</span><br>
-		and Denis Kalkofen, <span class="text-muted">Graz University of Technology</span>
+		Denis Kalkofen, <span class="text-muted">Graz University of Technology</span>
 	</p>
 
 	<div class="well text-center mt-5">
@@ -60,7 +60,12 @@
 
 	<h4 class="mt-5">Abstract</h4>
 	<img src="assets/inpaintfusion_teaser.jpg" class="img-fluid mt-3 mb-2" alt="Teaser image">
-	<p>State-of-the-art methods for diminished reality propagate pixel information from a keyframe to subsequent frames for real-time inpainting. However, these approaches produce artifacts, if the scene geometry is not sufficiently planar. In this paper, we present InpaintFusion, a new real-time method that extends inpainting to non-planar scenes by considering both color and depth information in the inpainting process. We use an RGB-D sensor for simultaneous localization and mapping, in order to both track the camera and obtain a surfel map in addition to RGB images. We use the RGB-D information in a cost function for both the color and the geometric appearance to derive a global optimization for simultaneous inpainting of color and depth. The inpainted depth is merged in a global map by depth fusion. For the final rendering, we project the map model into image space, where we can use it for effects such as relighting and stereo rendering of otherwise hidden structures. We demonstrate the capabilities of our method by comparing it to inpainting results with methods using planar geometric proxies.</p>
+	<p><b>Background:</b> State-of-the-art methods for diminished reality propagate pixel information from a keyframe to subsequent frames for real-time inpainting. However, these approaches produce artifacts, if the scene geometry is not sufficiently planar.</p>
+	<p><b>Proposal:</b> In this paper, we present InpaintFusion, a new real-time method that extends inpainting to non-planar scenes by considering both color and depth information in the inpainting process.</p>
+	<p><b>Approach:</b> We use an RGB-D sensor for simultaneous localization and mapping, in order to both track the camera and obtain a surfel map in addition to RGB images. We use the RGB-D information in a cost function for both the color and the geometric appearance to derive a global optimization for simultaneous inpainting of color and depth. The inpainted depth is merged in a global map by depth fusion. For the final rendering, we project the map model into image space, where we can use it for effects such as relighting and stereo rendering of otherwise hidden structures.</p>
+	<p><b>Evaluation:</b> We demonstrate the capabilities of our method by comparing it to inpainting results with methods using planar geometric proxies.</p>
+
+	<img src="assets/fig_10.jpg" class="img-fluid mt-3 mb-2" alt="Teaser image">
 
 	<h4 class="mt-5">BibTex</h4>
 	<div class="col bg-light rounded">
